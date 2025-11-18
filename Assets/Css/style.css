@@ -278,13 +278,6 @@ body {
     padding: 70px 0;
 }
 
-.marquee-section h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    font-weight: 700;
-}
-
 .marquee-wrapper {
     overflow: hidden;
     white-space: nowrap;
