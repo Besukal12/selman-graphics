@@ -132,7 +132,6 @@
 
 </section>
 
-
 <!--skill section-->
 
 <section id="skills" class="skill_bar_section">
@@ -187,17 +186,72 @@
           </div>
         </div>
       </div>
-      <div class="responsive-cell-block wk-mobile-12 wk-tab-11 wk-desk-6 wk-ipadp-10">
-        <div class="right-side">
-          <img class="img" src="./Assets/images/skills.svg">
-        </div>
-      </div>
     </div>
   </div>
 </section>
 
+<!--projects section-->
+
+<div class="main-container">
+  <div class="parent">
+    <div class="div1"><img src="./Assets/images/img 1.jpg" alt="best graphics designer in ethiopia"></div>
+    <div class="div2"><img src="./Assets/images/img 2.jpg" alt="best graphics designer in ethiopia"></div>
+    <div class="div3"><img src="./Assets/images/img 3.jpg" alt="best graphics designer in ethiopia"></div>
+    <div class="div4"><img src="./Assets/images/img 4.jpg" alt="best graphics designer in ethiopia"></div>
+    <div class="div5"><img src="./Assets/images/img 7.jpg" alt="best graphics designer in ethiopia"></div>
+  </div>
+
+  <div class="hero-buttons second-classname">
+    <button class="primary-btn">See More →</button>
+    <button class="secondary-btn">Hire me →</button>
+  </div>
+</div>
 
 
+<!-- Modal -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
+<!--contact-->
+
+<div class="contact-container" ng-app=""  ng-init="firstName=''; lastName=''; place=''; profession=''; company=''; message=''; email=''">
+
+  <div class="grid">
+    <div ng-app ng-init="firstName=''; lastName=''; place=''; profession=''; company=''; message=''; email=''">
+      <div class="grid">
+        <div class="form-box">
+          <h2>Contact Me</h2>
+          <input type="text" ng-model="firstName" placeholder="First Name">
+          <input type="text" ng-model="lastName" placeholder="Last Name">
+          <input type="text" ng-model="place" placeholder="Country">
+          <input type="email" ng-model="email" placeholder="Email">
+          <textarea ng-model="message" placeholder="Message"></textarea>
+    
+          <button ng-click="firstName=''; lastName=''; place=''; profession=''; company=''; message=''; email=''">
+            Clear Form
+          </button>
+        </div>
+    
+        <!-- Paper Preview -->
+        <div class="paper">
+          <div class="lines">
+            <div class="Lettertext">
+              Hello Curious Cat,<br><br>
+              This is {{ firstName }} {{ lastName }}. I am from {{ place }}<br><br>
+              {{ message }}<br><br>
+              You can reach me back on {{ email }}.<br><br>
+              Thanks and Regards,<br>
+              {{ firstName }} {{ lastName }}
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
